@@ -216,7 +216,7 @@ const resetDrop = resetDropInterval();
         <tr v-for="(row, y) in tetris.field.data" :key="y">
           <td
             class="block"
-            v-for="(col, x) in row"
+            v-for="(_, x) in row"
             :key="() => `${x}${y}`"
             v-bind:class="classBlockColor(x, y)"
           >
